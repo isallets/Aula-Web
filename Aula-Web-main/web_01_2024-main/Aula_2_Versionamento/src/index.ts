@@ -21,6 +21,37 @@ Vamos criar variáveis e objetos para representar diferentes tipos de dados rela
     Em seguida, imprima todas as variáveis e propriedades do objeto usuario usando console.log.
 
 */
+//1-
+ let nomeCompleto: string = "Isabelle Lopes";
+ let idad: number = 19;
+ let email: string = "isabellelopes@email.com";
+ let isAtivo: boolean = true;
+
+ //2-
+ type Contato = {
+    email: string,
+    telefone: string
+ }
+ type Usuario = {
+    nome: string,
+    sobrenome: string,
+    idade: number,
+    contato: Contato
+ }
+ let contato: Contato = {
+    email: "isablletsemail",
+    telefone: "isalletstelefone"
+ }
+ let usuarioObjeto: object = {
+    nome: "Isabelle",
+    sobrenome: "Lopes",
+    idade: 19,
+    contato: contato
+ }
+
+ console.log(Object.values(usuarioObjeto)); //testar dps se imprime
+
+ 
 
 
 /*
